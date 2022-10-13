@@ -14,14 +14,9 @@ interface Props {
 }
 
 const data = [
-  { title: 'Men' },
-  { title: 'Women' },
-  { title: 'Devices' },
-  { title: 'Gadgets' },
-  { title: 'Games' },
-  { title: 'Men' },
-  { title: 'Women' },
-  { title: 'Devices' },
+  { title: 'CheckBox', id: 'CheckBox' },
+  { title: 'Radio', id: 'Radio' },
+  { title: 'Others', id: 'Others' },
 ];
 
 const Category: React.FC<Props> = ({ componentId, title }: Props) => {
@@ -33,7 +28,7 @@ const Category: React.FC<Props> = ({ componentId, title }: Props) => {
           title={item.title}
           onClick={
           () => router.showListingsScreen(
-            { componentId, passProps: { query: item.title } },
+            { componentId, passProps: { query: item.title, id: item.id } },
             item.title,
           )}
         />

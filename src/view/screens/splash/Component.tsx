@@ -25,7 +25,7 @@ const SPLASH: React.FC<Props> = (props: Props) => {
         <Image
           style={styles.image}
           resizeMode={'contain'}
-          source={require('../../assets/images/rnn2.png')}
+          source={require('../../assets/images/nab.png')}
         />
         <Image
           resizeMode={'center'}

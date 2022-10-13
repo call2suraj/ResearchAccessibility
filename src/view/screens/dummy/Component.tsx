@@ -6,10 +6,22 @@ import { CTEXT } from '../../elements/custom';
 
 import { Props } from './index';
 
+import CheckBoxExample from '../../screens/example/checkbox/index';
+import RadioExample from '../../screens/example/radio/index';
+
 const DUMMY: React.FC<Props> = (props: Props) => (
   <SafeAreaView style={GLOBAL.LAYOUT.SafeArea}>
-    <CTEXT>{'This Screen has been pushed over Home screen'}</CTEXT>
-    <CTEXT>{`Prop passed: ${props.dummyText}`}</CTEXT>
+    {
+      props.id === 'CheckBox' ? <CheckBoxExample /> : null
+    }
+
+    {
+      props.id === 'Radio' ? <RadioExample /> : null
+    }
+
+    {
+      props.id === 'Others' ? <CheckBoxExample /> : null
+    }
   </SafeAreaView>
 );
 

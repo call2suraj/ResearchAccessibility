@@ -55,7 +55,7 @@ class Home extends React.PureComponent<Props, State> {
         <ScrollView style={GLOBAL.LAYOUT.pageContainer}>
           <TouchableOpacity onPress={this.showBurgerMenu}>
             <Image
-              style={{ marginBottom: 20, width: 40, height: 40 }}
+              style={{ marginBottom: 20, width: 40, height: 40, backgroundColor: 'red' }}
               resizeMode={'contain'}
               source={require('../../assets/images/burger-menu.png')}
             />
