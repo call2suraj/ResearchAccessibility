@@ -13,15 +13,15 @@
   "author": {
     "name": "Suraj Behera",
     "email": "call2suraj@gmail.com",
-    "url": "https://github.com/AmitM30"
+    "url": "https://github.com/call2suraj"
   },
   "private": false,
   "repository": {
     "type": "git",
-    "url": "git://github.com/AmitM30/react-native-typescript-boilerplate"
+    "url": "https://github.com/call2suraj/ResearchAccessibility"
   },
   "bugs": {
-    "url": "https://github.com/AmitM30/react-native-typescript-boilerplate/issues",
+    "url": "https://github.com/call2suraj/ResearchAccessibility/issues",
     "email": "call2suraj@gmail.com"
   },
   "scripts": {
