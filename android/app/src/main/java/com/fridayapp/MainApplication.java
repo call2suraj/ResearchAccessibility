@@ -14,6 +14,8 @@ import com.reactnativenavigation.NavigationApplication;
 import com.reactnativenavigation.react.NavigationReactNativeHost;
 //import com.reactnativenavigation.react.ReactGateway;
 
+import com.oblador.vectoricons.VectorIconsPackage;
+
 import com.facebook.react.PackageList;
 
 import java.util.Arrays;
@@ -49,6 +51,7 @@ public class MainApplication extends NavigationApplication {
     protected List<ReactPackage> getPackages() {
         return Arrays.<ReactPackage>asList(
                 // eg. new VectorIconsPackage()
+                 new VectorIconsPackage()
         );
     }
 

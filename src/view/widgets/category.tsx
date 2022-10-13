@@ -32,7 +32,7 @@ const Category: React.FC<Props> = ({ componentId, title }: Props) => {
             item.title,
           )}
         />
-        <CTEXT style={GLOBAL.FONTS.body}>{item.title}</CTEXT>
+        {/* <CTEXT style={GLOBAL.FONTS.body}>{item.title}</CTEXT> */}
       </View>
     );
   };

@@ -197,6 +197,7 @@ dependencies {
     // implementation project(':react-native-navigation')
     // noinspection GradleDynamicVersion
     implementation "com.facebook.react:react-native:+"  // From node_modules
+    implementation project(':react-native-vector-icons')
     compile 'com.android.support:multidex:1.0.0'
 
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
@@ -251,5 +252,7 @@ subprojects { subproject ->
         }
     }
 }
+
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
 
 apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)

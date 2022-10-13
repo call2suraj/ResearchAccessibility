@@ -35,7 +35,7 @@ const SPLASH: React.FC<Props> = (props: Props) => {
           title={'Continue To App'}
           onClick={navigateToHome}
         />
-      </View>
+      </View>  
     </SafeAreaView>
   );
 };

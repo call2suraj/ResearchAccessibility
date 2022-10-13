@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { SafeAreaView } from 'react-native';
+import { SafeAreaView, View, Text } from 'react-native';
 
 import { GLOBAL } from '../../styles/global';
 import { CTEXT } from '../../elements/custom';

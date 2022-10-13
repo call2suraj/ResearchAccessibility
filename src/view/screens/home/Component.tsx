@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Navigation } from 'react-native-navigation';
-import { SafeAreaView, ScrollView, TouchableOpacity, Image } from 'react-native';
+import { SafeAreaView, ScrollView, TouchableOpacity, Image, View } from 'react-native';
 
 import { GLOBAL } from '../../styles/global';
 import { Category } from '../../widgets/category';
@@ -10,6 +10,8 @@ import { BUTTON_DEFAULT } from '../../elements/buttons';
 import { CTEXT, CTEXTINPUT } from '../../elements/custom';
 
 import { Props } from './index';
+
+import Icon from 'react-native-vector-icons/Ionicons';
 
 interface State {
   name: string;
@@ -24,9 +26,9 @@ class Home extends React.PureComponent<Props, State> {
     };
   }
 
-  componentDidMount() {}
+  componentDidMount() { }
 
-  showBurgerMenu () {
+  showBurgerMenu() {
     Navigation.mergeOptions('drawerComponentId', {
       sideMenu: {
         left: {
@@ -49,26 +51,26 @@ class Home extends React.PureComponent<Props, State> {
   render() {
     const { name } = this.state;
     const { componentId } = this.props;
-
+console.log('componentId', componentId)
     return (
       <SafeAreaView style={GLOBAL.LAYOUT.SafeArea}>
-        <ScrollView style={GLOBAL.LAYOUT.pageContainer}>
-          <TouchableOpacity onPress={this.showBurgerMenu}>
-            <Image
-              style={{ marginBottom: 20, width: 40, height: 40, backgroundColor: 'red' }}
-              resizeMode={'contain'}
-              source={require('../../assets/images/burger-menu.png')}
-            />
+        <View style={{ backgroundColor: 'white', height:40}}>
+
+          <TouchableOpacity onPress={this.showBurgerMenu} style={{paddingTop: 5, backgroundColor:'#E4E5E4'}}>
+        <Icon name='md-menu-sharp' size={30} color="red"/>
           </TouchableOpacity>
+        </View>
+        <ScrollView style={GLOBAL.LAYOUT.pageContainer}>
+
           <Category componentId={componentId} title={locale.Categories} />
-          <CTEXT>{locale.Home}</CTEXT>
+          {/* <CTEXT>{locale.Home}</CTEXT>
           <CTEXT>{name}</CTEXT>
           <CTEXTINPUT />
           <BUTTON_DEFAULT onClick={this.showPushScreen} title={'Push Screen'} style={{
             alignSelf: 'center',
             marginTop: 50,
             width: 250,
-          }} />
+          }} /> */}
         </ScrollView>
       </SafeAreaView>
     );
