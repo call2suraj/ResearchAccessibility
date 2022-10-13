@@ -8,9 +8,19 @@ interface Props {}
 
 const DRAWER: React.FC<Props> = () => (
   <SafeAreaView style={GLOBAL.LAYOUT.SafeArea}>
-    <View style={GLOBAL.LAYOUT.pageContainer}>
-      <CTEXT>{'Drawer Menu'}</CTEXT>
+    <View style={{padding: 10, backgroundColor:'#E4E5E4'}}>
+      <CTEXT style={{fontSize: 16, fontWeight:'bold'}}>{'Menues'}</CTEXT>
     </View>
+
+    <View style={GLOBAL.LAYOUT.pageContainer}>
+      <CTEXT>{'CheckBox'}</CTEXT>
+    </View>
+
+    <View style={GLOBAL.LAYOUT.pageContainer}>
+      <CTEXT>{'Radio Button'}</CTEXT>
+    </View>
+
+
   </SafeAreaView>
 );
 
