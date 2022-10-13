@@ -11,8 +11,8 @@
   ],
   "version": "0.5.0",
   "author": {
-    "name": "Amit Mangal",
-    "email": "mangalamitash@gmail.com",
+    "name": "Suraj Behera",
+    "email": "call2suraj@gmail.com",
     "url": "https://github.com/AmitM30"
   },
   "private": false,
@@ -22,7 +22,7 @@
   },
   "bugs": {
     "url": "https://github.com/AmitM30/react-native-typescript-boilerplate/issues",
-    "email": "mangalamitash@gmail.com"
+    "email": "call2suraj@gmail.com"
   },
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
