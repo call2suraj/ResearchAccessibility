@@ -113,6 +113,10 @@ export default class CheckBox extends Component {
                 onPress={() => this.onClick()}
                 underlayColor='transparent'
                 disabled={this.props.disabled}
+                accessible={true}
+                accessibilityLabel={this.props.accessLabel}
+                accessibilityHint={this.props.accessHint}
+                accessibilityState={{ disabled: this.props.disabled, checked: this.props.isChecked }}
             >
                 <View style={styles.container}>
                     {this._renderLeft()}

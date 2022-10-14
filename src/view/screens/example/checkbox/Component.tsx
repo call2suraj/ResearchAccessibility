@@ -43,7 +43,7 @@ const CheckBoxExample = () => {
             <View style={{
               backgroundColor: isDarkMode ? Colors.black : Colors.white,
             }}>
-              <Text style={{ fontSize: 18 }}> Checkbox Example : Left Label touch </Text>
+              <Text style={{ fontSize: 18 }}> Checkbox : Left Label : Accessibility Enabled </Text>
             </View>
           </TouchableOpacity>
           <CheckBox
@@ -53,8 +53,12 @@ const CheckBoxExample = () => {
             }}
             isChecked={isCheckedTwo}
             leftText={"Left Label CheckBox"}
+            accessLabel="Left Label CheckBox"
+            accessHint="Hint Double Tab"
+            accessibilityRole="button"
           />
         </View>
+
         <View
           style={{
             borderBottomColor: 'black',
@@ -182,6 +186,35 @@ const CheckBoxExample = () => {
             uncheckedCheckBoxColor = "red"
             isChecked={isCheckedFour}
             rightText={"Default Checked CheckBox"}
+          />
+        </View>
+
+
+        <View
+          style={{
+            backgroundColor: isDarkMode ? Colors.black : Colors.white,
+            paddingTop: 10,
+          }}>
+          <TouchableOpacity
+            accessible={true}
+            accessibilityLabel="Tap me!"
+            onPress={() => { console.log('hi') }} >
+            <View style={{
+              backgroundColor: isDarkMode ? Colors.black : Colors.white,
+            }}>
+              <Text style={{ fontSize: 18 }}> Checkbox : Left Label : Accessibility Enabled </Text>
+            </View>
+          </TouchableOpacity>
+          <CheckBox
+            style={{ flex: 1, padding: 10, width: 200 }}
+            onClick={() => {
+              setIsCheckedTwo(!isCheckedTwo)
+            }}
+            isChecked={isCheckedTwo}
+            rightText={"Accessibility CheckBox"}
+            accessLabel="Accessibility CheckBox"
+            accessHint="Hint Double Tab"
+            accessibilityRole="checkbox"
           />
         </View>
 
