@@ -21,6 +21,7 @@ const CheckBoxExample = () => {
   const [isCheckedTwo, setIsCheckedTwo] = React.useState(false);
   const [isCheckedThree, setIsCheckedThree] = React.useState(false);
   const [isCheckedFour, setIsCheckedFour] = React.useState(true);
+  const [isCheckedFive, setIsCheckedFive]= React.useState(true);
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.white, margin: 2,
   };
@@ -202,15 +203,15 @@ const CheckBoxExample = () => {
             <View style={{
               backgroundColor: isDarkMode ? Colors.black : Colors.white,
             }}>
-              <Text style={{ fontSize: 18 }}> Checkbox : Left Label : Accessibility Enabled </Text>
+              <Text style={{ fontSize: 18 }}> Checkbox : Right Label : Accessibility Enabled </Text>
             </View>
           </TouchableOpacity>
           <CheckBox
             style={{ flex: 1, padding: 10, width: 200 }}
             onClick={() => {
-              setIsCheckedTwo(!isCheckedTwo)
+              setIsCheckedFive(!isCheckedFive)
             }}
-            isChecked={isCheckedTwo}
+            isChecked={isCheckedFive}
             rightText={"Accessibility CheckBox"}
             accessLabel="Accessibility CheckBox"
             accessHint="Hint Double Tab"
