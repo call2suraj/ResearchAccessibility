@@ -60,14 +60,6 @@ const CheckBoxExample = () => {
           />
         </View>
 
-        {/* <View
-          style={{
-            borderBottomColor: 'black',
-            borderBottomWidth: StyleSheet.hairlineWidth,
-            backgroundColor: Colors.white, padding: 10,
-
-          }}
-        /> */}
 
         <View
           style={{
@@ -84,14 +76,6 @@ const CheckBoxExample = () => {
             rightText={"Right Label CheckBox"}
           />
         </View>
-        {/* <View
-          style={{
-            borderBottomColor: 'black',
-            borderBottomWidth: StyleSheet.hairlineWidth,
-            backgroundColor: Colors.white, padding: 10,
-
-          }}
-        /> */}
 
         <View
           style={{
@@ -108,15 +92,6 @@ const CheckBoxExample = () => {
             isChecked={isChecked}
           />
         </View>
-
-        {/* <View
-          style={{
-            borderBottomColor: 'black',
-            borderBottomWidth: StyleSheet.hairlineWidth,
-            backgroundColor: Colors.white, padding: 10,
-
-          }}
-        /> */}
 
         <View
           style={{
@@ -137,14 +112,6 @@ const CheckBoxExample = () => {
           />
         </View>
 
-        {/* <View
-          style={{
-            borderBottomColor: 'black',
-            borderBottomWidth: StyleSheet.hairlineWidth,
-            backgroundColor: Colors.white, padding: 10,
-
-          }}
-        /> */}
         <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
@@ -162,14 +129,6 @@ const CheckBoxExample = () => {
             rightText={"Colored CheckBox"}
           />
         </View>
-        {/* <View
-          style={{
-            borderBottomColor: 'black',
-            borderBottomWidth: StyleSheet.hairlineWidth,
-            backgroundColor: Colors.white, padding: 10,
-
-          }}
-        /> */}
 
 
         <View
