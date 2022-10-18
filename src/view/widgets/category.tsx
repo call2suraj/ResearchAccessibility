@@ -16,6 +16,7 @@ interface Props {
 const data = [
   { title: 'CheckBox', id: 'CheckBox' },
   { title: 'Radio', id: 'Radio' },
+  { title: 'Button', id: 'Button' },
   { title: 'Others', id: 'Others' },
 ];
 
