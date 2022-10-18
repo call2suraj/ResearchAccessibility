@@ -117,6 +117,7 @@ export default class CheckBox extends Component {
                 accessibilityLabel={this.props.accessLabel}
                 accessibilityHint={this.props.accessHint}
                 accessibilityState={{ disabled: this.props.disabled, checked: this.props.isChecked }}
+                accessibilityRole={this.props.accessRole}
             >
                 <View style={styles.container}>
                     {this._renderLeft()}

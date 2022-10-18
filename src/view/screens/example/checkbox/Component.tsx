@@ -60,14 +60,14 @@ const CheckBoxExample = () => {
           />
         </View>
 
-        <View
+        {/* <View
           style={{
             borderBottomColor: 'black',
             borderBottomWidth: StyleSheet.hairlineWidth,
             backgroundColor: Colors.white, padding: 10,
 
           }}
-        />
+        /> */}
 
         <View
           style={{
@@ -84,14 +84,14 @@ const CheckBoxExample = () => {
             rightText={"Right Label CheckBox"}
           />
         </View>
-        <View
+        {/* <View
           style={{
             borderBottomColor: 'black',
             borderBottomWidth: StyleSheet.hairlineWidth,
             backgroundColor: Colors.white, padding: 10,
 
           }}
-        />
+        /> */}
 
         <View
           style={{
@@ -109,14 +109,14 @@ const CheckBoxExample = () => {
           />
         </View>
 
-        <View
+        {/* <View
           style={{
             borderBottomColor: 'black',
             borderBottomWidth: StyleSheet.hairlineWidth,
             backgroundColor: Colors.white, padding: 10,
 
           }}
-        />
+        /> */}
 
         <View
           style={{
@@ -137,14 +137,14 @@ const CheckBoxExample = () => {
           />
         </View>
 
-        <View
+        {/* <View
           style={{
             borderBottomColor: 'black',
             borderBottomWidth: StyleSheet.hairlineWidth,
             backgroundColor: Colors.white, padding: 10,
 
           }}
-        />
+        /> */}
         <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
@@ -162,14 +162,14 @@ const CheckBoxExample = () => {
             rightText={"Colored CheckBox"}
           />
         </View>
-        <View
+        {/* <View
           style={{
             borderBottomColor: 'black',
             borderBottomWidth: StyleSheet.hairlineWidth,
             backgroundColor: Colors.white, padding: 10,
 
           }}
-        />
+        /> */}
 
 
         <View
@@ -215,7 +215,36 @@ const CheckBoxExample = () => {
             rightText={"Accessibility CheckBox"}
             accessLabel="Accessibility CheckBox"
             accessHint="Hint Double Tab"
-            accessibilityRole="checkbox"
+            accessRole="checkbox"
+          />
+        </View>
+
+
+        <View
+          style={{
+            backgroundColor: isDarkMode ? Colors.black : Colors.white,
+            paddingTop: 10,
+          }}>
+          <TouchableOpacity
+            accessible={true}
+            accessibilityLabel="Tap me!"
+            onPress={() => { console.log('hi') }} >
+            <View style={{
+              backgroundColor: isDarkMode ? Colors.black : Colors.white,
+            }}>
+              <Text style={{ fontSize: 18 }}> Checkbox : Accessibility : Role Enabled</Text>
+            </View>
+          </TouchableOpacity>
+          <CheckBox
+            style={{ flex: 1, padding: 10, width: 200 }}
+            onClick={() => {
+              setIsCheckedFive(!isCheckedFive)
+            }}
+            isChecked={isCheckedFive}
+            rightText={"Accessibility CheckBox"}
+            accessLabel="Accessibility CheckBox"
+            accessHint="Hint Double Tab"
+            accessRole="button"
           />
         </View>
 
