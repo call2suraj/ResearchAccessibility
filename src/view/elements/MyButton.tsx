@@ -8,7 +8,8 @@ import {
   TouchableOpacity,
   TextInput,
   Button,
-  Alert
+  Alert,
+  Pressable
 } from 'react-native';
 
 import { CTEXT } from './custom';
@@ -17,7 +18,7 @@ export default class MyButton extends Component {
 
   constructor(props: any) {
     super(props);
-    this.state = { hasFocus: false, backgroundColor: '#ededed', color: 'white', btnBackgroundColor: 'red', };
+    this.state = { hasFocus: false, backgroundColor: '#ededed', color: 'white', btnBackgroundColor: 'red', focused: false };
   }
 
   onFocus() {
@@ -55,28 +56,39 @@ export default class MyButton extends Component {
   }
 
   onBtnFocus() {
-    console.log("focus clicked")
+    Alert.alert("focus clicked")
     this.setState({
       btnBackgroundColor: '#3074EC'
+    })
+  }
+
+  onPressFunction() {
+    this.setState({
+      focused: !this.state.focused
     })
   }
   render() {
     const myElement = createRef();
     return (
       <View>
-        <CTEXT>{'Text Input Example'}</CTEXT>
-        <TextInput
-          onBlur={() => this.onBlur()}
-          onFocus={() => this.onFocus()}
-          style={{ height: 40, backgroundColor: this.state.backgroundColor, color: this.state.color }} />
+        <View style={{ paddingTop: 15 }}>
+          <CTEXT>{'Text Input Example'}</CTEXT>
+          <TextInput
+            onBlur={() => this.onBlur()}
+            onFocus={() => this.onFocus()}
+            style={{ height: 40, backgroundColor: this.state.backgroundColor, color: this.state.color }} />
+        </View>
 
         <View style={{ paddingTop: 15 }}>
-          <CTEXT>{'Text Example'}</CTEXT>
+          <CTEXT>{'Text Button Example'}</CTEXT>
           <TouchableOpacity
             accessible={true}
             ref={myElement}
             onFocus={() => this.onBtnFocus()}
             onAccessibilityAction={() => this.onClick()}
+            accessibilityLabel="Go back"
+            accessibilityHint="Hint Double Tab"
+            accessibilityRole="button"
           >
             <Text style={{ height: 30, backgroundColor: this.state.btnBackgroundColor, color: this.state.color }}
               onPress={() => this.onTxtPress()}>Click Me!</Text>
@@ -84,13 +96,31 @@ export default class MyButton extends Component {
         </View>
 
         <View style={{ paddingTop: 15 }}>
-          <CTEXT>{'Button Example'}</CTEXT>
-
+          <CTEXT>{'React Native Button Example'}</CTEXT>
           <Button
-            title="Right button"
+            title="Test button"
+            accessible={true}
+            accessibilityLabel="Go back"
+            accessibilityHint="Hint button type"
+            accessibilityRole="button"
             onPress={() => this.onBtnPress()}
           />
         </View>
+
+        <View style={{ paddingTop: 15 }}>
+          <CTEXT>{'Pressable React Native Button Example'}</CTEXT>
+          <Pressable
+            onPress={() => this.onPressFunction()}
+            style={{ backgroundColor: this.state.focused ? 'red' : 'grey', height: 30 }}
+            accessibilityLabel="Pressable Label"
+            accessibilityHint="Hint Pressable"
+            accessibilityRole="button"
+          >
+            <Text>Press Me</Text>
+          </Pressable>
+        </View>
+
+
       </View>
     );
   }
