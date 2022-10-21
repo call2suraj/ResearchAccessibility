@@ -120,6 +120,34 @@ export default class MyButton extends Component {
           </Pressable>
         </View>
 
+        <View style={{ paddingTop: 15 }}>
+          <CTEXT>{'React Native Pressable Button Example 1'}</CTEXT>
+          <Pressable
+            android_ripple={{ color: 'red', borderless: false }}
+            style={{ backgroundColor: 'blue', borderRadius: 5, height: 60 }}>
+            <Text style={{ alignSelf: 'center', color: 'white', paddingTop: 15 }}>Pressable Button</Text>
+          </Pressable>
+        </View>
+
+        <View style={{ paddingTop: 15 }}>
+          <CTEXT>{'Pressable Button Example 2 : android_ripple'}</CTEXT>
+          <Pressable
+            style={{
+              height: 60,
+              width: 160,
+
+              backgroundColor: 'red',
+              justifyContent: 'center',
+              alignItems: 'center',
+              elevation: 4,
+            }}
+            android_ripple={{
+              color: 'black',
+            }}
+            onPress={() => { console.log('Pressed') }}>
+            <Text>Press Here</Text>
+          </Pressable>
+        </View>
 
       </View>
     );
