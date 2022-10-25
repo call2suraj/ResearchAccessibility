@@ -108,6 +108,10 @@ yarn android
 
  This app is using React Native and TypeScript with most commoly needed tools already setup. Just yarn install to get started
 
-<img width="382" alt="Screenshot 2022-10-13 at 6 28 03 PM" src="https://user-images.githubusercontent.com/31704596/195606753-14302532-6b4c-4e39-9a10-94a513f76bf3.png">
-<img width="370" alt="Screenshot 2022-10-13 at 6 28 14 PM" src="https://user-images.githubusercontent.com/31704596/195606767-676fe846-b92d-418e-918c-cd174258ac08.png">
-<img width="381" alt="Screenshot 2022-10-13 at 6 45 48 PM" src="https://user-images.githubusercontent.com/31704596/195606783-73630660-7230-4400-b467-7ffc97e9d82a.png">
+Below is how the app will look like
+
+<img width="378" alt="Screenshot 2022-10-25 at 1 12 50 PM" src="https://user-images.githubusercontent.com/31704596/197714070-07a598cc-bb0a-48e6-8210-c3ae8ab5f386.png">
+<img width="385" alt="Screenshot 2022-10-25 at 1 13 12 PM" src="https://user-images.githubusercontent.com/31704596/197714088-0ea2b03c-f1dd-4539-8587-48adb19ccb3c.png">
+<img width="385" alt="Screenshot 2022-10-25 at 1 13 32 PM" src="https://user-images.githubusercontent.com/31704596/197714097-f9406530-2dce-44a3-9ced-727fcd9aee29.png">
+
+
