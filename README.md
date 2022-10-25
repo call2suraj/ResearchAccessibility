@@ -113,5 +113,6 @@ Below is how the app will look like
 <img width="378" alt="Screenshot 2022-10-25 at 1 12 50 PM" src="https://user-images.githubusercontent.com/31704596/197714070-07a598cc-bb0a-48e6-8210-c3ae8ab5f386.png">
 <img width="385" alt="Screenshot 2022-10-25 at 1 13 12 PM" src="https://user-images.githubusercontent.com/31704596/197714088-0ea2b03c-f1dd-4539-8587-48adb19ccb3c.png">
 <img width="385" alt="Screenshot 2022-10-25 at 1 13 32 PM" src="https://user-images.githubusercontent.com/31704596/197714097-f9406530-2dce-44a3-9ced-727fcd9aee29.png">
+<img width="386" alt="Screenshot 2022-10-25 at 1 16 59 PM" src="https://user-images.githubusercontent.com/31704596/197714488-a0d61aca-baf3-4cd8-9aef-2af18d1be132.png">
 
 
