@@ -9,6 +9,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import CheckBox from '../../../elements/CheckBox';
+import CheckExample from './CheckBoxExample';
 
 import {
   Colors,
@@ -21,7 +22,9 @@ const CheckBoxExample = () => {
   const [isCheckedTwo, setIsCheckedTwo] = React.useState(false);
   const [isCheckedThree, setIsCheckedThree] = React.useState(false);
   const [isCheckedFour, setIsCheckedFour] = React.useState(true);
-  const [isCheckedFive, setIsCheckedFive]= React.useState(true);
+  const [isCheckedFive, setIsCheckedFive] = React.useState(true);
+  const [isCheckedSix, setIsCheckedSix] = React.useState(false);
+  const [isCheckedEight, setIsCheckedEight] = React.useState(false);
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.white, margin: 2,
   };
@@ -32,7 +35,26 @@ const CheckBoxExample = () => {
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
 
-        <View
+        {/* <View
+          style={{
+            backgroundColor: isDarkMode ? Colors.black : Colors.white,
+            paddingTop: 10,
+          }}>
+          <Text style={{ fontSize: 18 }}> Checkbox: Accessibility Enabled </Text>
+          <CheckBox
+            style={{ flex: 1, padding: 10, width: 200 }}
+            onClick={() => {
+              setIsCheckedSix(!isCheckedSix)
+            }}
+            isChecked={isCheckedSix}
+            leftText={"Testing"}
+            accessLabel="CheckBox Label"
+            accessHint="My Hint"
+            accessibilityRole="checkbox"
+          />
+        </View> */}
+
+        {/* <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
             paddingTop: 10,
@@ -58,10 +80,10 @@ const CheckBoxExample = () => {
             accessHint="Hint Double Tab"
             accessibilityRole="button"
           />
-        </View>
+        </View> */}
 
 
-        <View
+        {/* <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
             paddingTop: 10,
@@ -91,9 +113,9 @@ const CheckBoxExample = () => {
             }}
             isChecked={isChecked}
           />
-        </View>
+        </View> */}
 
-        <View
+        {/* <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
             paddingTop: 10,
@@ -108,7 +130,7 @@ const CheckBoxExample = () => {
             isChecked={isCheckedOne}
             rightText={"Disabled CheckBox"}
             disabled={true}
-            uncheckedCheckBoxColor = "#d4d4d5"
+            uncheckedCheckBoxColor="#d4d4d5"
           />
         </View>
 
@@ -124,7 +146,7 @@ const CheckBoxExample = () => {
             onClick={() => {
               setIsCheckedOne(!isCheckedOne)
             }}
-            uncheckedCheckBoxColor = "red"
+            uncheckedCheckBoxColor="red"
             isChecked={isCheckedOne}
             rightText={"Colored CheckBox"}
           />
@@ -139,72 +161,18 @@ const CheckBoxExample = () => {
           <Text style={{ fontSize: 18 }}> Checkbox Example : Default Checked</Text>
 
           <CheckBox
-            style={{ flex: 1, padding: 10, width: 250 }}
+            style={{ flex: 1, padding: 10 }}
             onClick={() => {
               setIsCheckedFour(!isCheckedFour)
             }}
-            uncheckedCheckBoxColor = "red"
+            uncheckedCheckBoxColor="red"
             isChecked={isCheckedFour}
             rightText={"Default Checked CheckBox"}
           />
-        </View>
+        </View> */}
 
-
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-            paddingTop: 10,
-          }}>
-          <TouchableOpacity
-            accessible={true}
-            accessibilityLabel="Tap me!"
-            onPress={() => { console.log('hi') }} >
-            <View style={{
-              backgroundColor: isDarkMode ? Colors.black : Colors.white,
-            }}>
-              <Text style={{ fontSize: 18 }}> Checkbox : Right Label : Accessibility Enabled </Text>
-            </View>
-          </TouchableOpacity>
-          <CheckBox
-            style={{ flex: 1, padding: 10, width: 200 }}
-            onClick={() => {
-              setIsCheckedFive(!isCheckedFive)
-            }}
-            isChecked={isCheckedFive}
-            rightText={"Accessibility CheckBox"}
-            accessLabel="Accessibility CheckBox"
-            accessHint="Hint Double Tab"
-            accessRole="checkbox"
-          />
-        </View>
-
-
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-            paddingTop: 10,
-          }}>
-          <TouchableOpacity
-            accessible={true}
-            accessibilityLabel="Tap me!"
-            onPress={() => { console.log('hi') }} >
-            <View style={{
-              backgroundColor: isDarkMode ? Colors.black : Colors.white,
-            }}>
-              <Text style={{ fontSize: 18 }}> Checkbox : Accessibility : Role Enabled</Text>
-            </View>
-          </TouchableOpacity>
-          <CheckBox
-            style={{ flex: 1, padding: 10, width: 200 }}
-            onClick={() => {
-              setIsCheckedFive(!isCheckedFive)
-            }}
-            isChecked={isCheckedFive}
-            rightText={"Accessibility CheckBox"}
-            accessLabel="Accessibility CheckBox"
-            accessHint="Hint Double Tab"
-            accessRole="button"
-          />
+        <View>
+          <CheckExample />
         </View>
 
       </ScrollView>
