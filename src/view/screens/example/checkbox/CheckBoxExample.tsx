@@ -215,6 +215,25 @@ export default class CheckExample extends Component<Props> {
                         />
                     </View>
                 </View>
+
+
+                <View>
+
+                <View
+                    style={{
+                        paddingTop: 10,
+                    }}>
+                    <Text style={{ fontSize: 18 }}>Checkbox Example : Paragraph</Text>
+
+                    <CheckBox
+                        style={{ flex: 1, padding: 10 }}
+                        onClick={this.handleCallbackFive}
+                        uncheckedCheckBoxColor="green"
+                        isChecked={this.state.isCheckedFive}
+                        rightText={"Terms of service are the legal agreements between a service provider and a person who wants to use that service. The person must agree to abide by the terms of service in order to use the offered service. Terms of service can also be merely a disclaimer, especially regarding the use of websites"}
+                    />
+                </View>
+                </View>
             </View>
         );
     }
