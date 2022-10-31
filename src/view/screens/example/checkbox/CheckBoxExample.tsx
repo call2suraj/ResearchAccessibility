@@ -216,9 +216,7 @@ export default class CheckExample extends Component<Props> {
                     </View>
                 </View>
 
-
                 <View>
-
                 <View
                     style={{
                         paddingTop: 10,
