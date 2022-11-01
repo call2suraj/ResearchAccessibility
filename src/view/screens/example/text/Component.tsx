@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { SafeAreaView, View, Linking, Text, TouchableOpacity, Alert, Button, TouchableWithoutFeedback } from 'react-native';
+import { SafeAreaView, View, Linking, Text, TouchableOpacity, Alert, Button, TouchableWithoutFeedback, } from 'react-native';
 
 import { GLOBAL } from '../../../styles/global';
 import { CTEXT } from '../../../elements/custom';
@@ -110,7 +110,7 @@ const TextExample: React.FC<Props> = (props: Props) => {
         }}>
           <CTEXT style={{ fontSize: 16, fontWeight: 'bold', color: 'white' }}>{'Example Four : Text with link in one row'}</CTEXT>
         </View>
-        <View style={{ flexDirection: "row", flex: 1, flexWrap: 'wrap', height: 50, paddingTop: 15, paddingBottom: 15  }}>
+        <View style={{ flexDirection: "row", flex: 1, flexWrap: 'wrap', height: 50, paddingTop: 15, paddingBottom: 15 }}>
           <Text accessible={true} accessibilityLabel="Add your"  > Addyour </Text>
           <TouchableOpacity accessible={true}
             accessibilityLabel="Click Me!" onPress={() => Linking.openURL('https://www.google.com')}>
@@ -125,22 +125,30 @@ const TextExample: React.FC<Props> = (props: Props) => {
 
 
       <View style={{
-          backgroundColor: '#1abc9c', height: 30
-        }}>
-          <CTEXT style={{ fontSize: 16, fontWeight: 'bold', color: 'white' }}>{'Example Five : Text with link inside paragraph '}</CTEXT>
-        </View>
-      <View style={{ flexDirection: "column", height: 50, paddingTop: 15, flexWrap: 'wrap' }} accessible={true}>
+        backgroundColor: '#1abc9c', height: 30
+      }}>
+        <CTEXT style={{ fontSize: 16, fontWeight: 'bold', color: 'white' }}>{'Example Five : Text with link inside paragraph '}</CTEXT>
+      </View>
+      <View style={{ flexDirection: "column", height: 50, paddingTop: 15, flexWrap: 'wrap'}} accessible={true}>
         <Text accessible={true} accessibilityLabel="I can click">I can click</Text>
-        <View style={{ flexDirection: "column", flexWrap: 'wrap' }}>
-          <TouchableOpacity accessible={true} onPress={() => console.log('This is printed')} accessible={true} accessibilityLabel="Research Link!" >
+        <View style={{ flexDirection: "column", flexWrap: 'wrap', height: 50}}>
+          <TouchableOpacity accessible={true} onPress={() => onTxtPress()} accessible={true} accessibilityLabel="Research Link!" >
             <Text style={{ color: 'blue', fontWeight: 'bold' }}> here </Text>
           </TouchableOpacity>
-          <Text accessible={true} accessibilityLabel="but the outer onPress is called">but the outer onPress is called</Text>
+          <SafeAreaView>
+            <Text style={{ flexShrink: 1, color: 'blue', maxWidth:350 ,height: 40,}}
+              accessible={true}
+              accessibilityLabel="but the outer onPress is called instead of the inner one here..."
+            >
+             but the outer onPress is called instead of the inner
+             {`\n`}
+              one here. This is a test message for demo only.
+            </Text>
+          </SafeAreaView>
         </View>
-        <Text style={{ flexShrink: 1 }} accessible={true} accessibilityLabel="instead of the inner" > instead of the inner</Text>
-        <Text style={{ flexShrink: 1 }} accessible={true} accessibilityLabel="one here..." > one here...</Text>
       </View>
-      <Text accessible={true} accessibilityLabel="here" >one here. . </Text>
+      {/* <Text style={{ backgroundColor:'orange', marginTop:1, paddingTop:1}} accessible={true} accessibilityLabel="here" >two here. . </Text> */}
+      <Text style={{ maxWidth:350}}>this is a test message. this is a test message</Text>
     </View>
   )
 }
