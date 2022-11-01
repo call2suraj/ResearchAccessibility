@@ -129,26 +129,30 @@ const TextExample: React.FC<Props> = (props: Props) => {
       }}>
         <CTEXT style={{ fontSize: 16, fontWeight: 'bold', color: 'white' }}>{'Example Five : Text with link inside paragraph '}</CTEXT>
       </View>
+
+      <View style={{ flexDirection: "row"}} >
       <View style={{ flexDirection: "column", height: 50, paddingTop: 15, flexWrap: 'wrap'}} accessible={true}>
-        <Text accessible={true} accessibilityLabel="I can click">I can click</Text>
+        <Text accessible={true} accessibilityLabel="I can click"> I can click one{`\n`} inner. This is a</Text>
+
         <View style={{ flexDirection: "column", flexWrap: 'wrap', height: 50}}>
+
           <TouchableOpacity accessible={true} onPress={() => onTxtPress()} accessible={true} accessibilityLabel="Research Link!" >
-            <Text style={{ color: 'blue', fontWeight: 'bold' }}> here </Text>
+            <Text style={{ color: 'blue', fontWeight: 'bold' }}>here. {`\n`} </Text>
           </TouchableOpacity>
+
           <SafeAreaView>
             <Text style={{ flexShrink: 1, color: 'blue', maxWidth:350 ,height: 40,}}
               accessible={true}
-              accessibilityLabel="but the outer onPress is called instead of the inner one here..."
-            >
-             but the outer onPress is called instead of the inner
+              accessibilityLabel="But the outer onPress is called instead of the inner one here. This is a test message for demo only."
+            >but the outer onPress is called instead of 
              {`\n`}
-              one here. This is a test message for demo only.
+            test message for demo only.
             </Text>
           </SafeAreaView>
         </View>
       </View>
-      {/* <Text style={{ backgroundColor:'orange', marginTop:1, paddingTop:1}} accessible={true} accessibilityLabel="here" >two here. . </Text> */}
-      <Text style={{ maxWidth:350}}>this is a test message. this is a test message</Text>
+      </View>
+     
     </View>
   )
 }
