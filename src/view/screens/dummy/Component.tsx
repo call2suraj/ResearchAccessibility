@@ -9,6 +9,7 @@ import { Props } from './index';
 import CheckBoxExample from '../../screens/example/checkbox/index';
 import RadioExample from '../../screens/example/radio/index';
 import ButtonExample from '../../screens/example/button/index';
+import TextExample from '../../screens/example/text/index';
 
 const DUMMY: React.FC<Props> = (props: Props) => (
   <SafeAreaView style={GLOBAL.LAYOUT.SafeArea}>
@@ -24,7 +25,7 @@ const DUMMY: React.FC<Props> = (props: Props) => (
       props.id === 'Button' ? <ButtonExample /> : null
     }
     {
-      props.id === 'Others' ? <CheckBoxExample /> : null
+      props.id === 'Text' ? <TextExample /> : null
     }
   </SafeAreaView>
 );

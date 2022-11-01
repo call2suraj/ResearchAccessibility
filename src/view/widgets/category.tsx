@@ -17,7 +17,7 @@ const data = [
   { title: 'CheckBox', id: 'CheckBox' },
   { title: 'Radio', id: 'Radio' },
   { title: 'Button', id: 'Button' },
-  { title: 'Others', id: 'Others' },
+  { title: 'Text', id: 'Text' },
 ];
 
 const Category: React.FC<Props> = ({ componentId, title }: Props) => {
