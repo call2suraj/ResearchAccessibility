@@ -8,6 +8,7 @@ import { Props } from './index';
 
 import CheckBoxExample from '../../screens/example/checkbox/index';
 import RadioExample from '../../screens/example/radio/index';
+import MySwitch from '../../screens/example/switch/index'
 import ButtonExample from '../../screens/example/button/index';
 import TextExample from '../../screens/example/text/index';
 
@@ -18,7 +19,7 @@ const DUMMY: React.FC<Props> = (props: Props) => (
     }
 
     {
-      props.id === 'Radio' ? <RadioExample /> : null
+      props.id === 'Switch' ? <MySwitch /> : null
     }
 
     {

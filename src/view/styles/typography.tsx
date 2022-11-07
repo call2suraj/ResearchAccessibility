@@ -35,7 +35,7 @@ const BUTTON = {
     borderRadius: 10,
     paddingVertical: 8,
     justifyContent: 'center',
-    paddingHorizontal: 20,
+    paddingHorizontal: 16,
     text: {
       fontSize: 14,
     },
