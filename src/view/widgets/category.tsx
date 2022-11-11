@@ -15,9 +15,10 @@ interface Props {
 
 const data = [
   { title: 'CheckBox', id: 'CheckBox' },
-  { title: 'Button', id: 'Button' },
+  { title: 'Animation', id: 'Animation' },
   { title: 'Text', id: 'Text' },
   { title: 'Switch', id: 'Switch' },
+  { title: 'Button', id: 'Button' }
 ];
 
 const Category: React.FC<Props> = ({ componentId, title }: Props) => {

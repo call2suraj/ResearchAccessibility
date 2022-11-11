@@ -11,6 +11,7 @@ import RadioExample from '../../screens/example/radio/index';
 import MySwitch from '../../screens/example/switch/index'
 import ButtonExample from '../../screens/example/button/index';
 import TextExample from '../../screens/example/text/index';
+import AnimationExample from '../../screens/example/animation/index';
 
 const DUMMY: React.FC<Props> = (props: Props) => (
   <SafeAreaView style={GLOBAL.LAYOUT.SafeArea}>
@@ -28,6 +29,10 @@ const DUMMY: React.FC<Props> = (props: Props) => (
     {
       props.id === 'Text' ? <TextExample /> : null
     }
+    {
+      props.id === 'Animation' ? <AnimationExample /> : null
+    }
+
   </SafeAreaView>
 );
 
