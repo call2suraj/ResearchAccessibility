@@ -7,6 +7,7 @@ const SCREENS = {
   Settings: 'Settings',
   Drawer: 'Drawer',
   Dummy: 'Dummy',
+  Animation: 'Animation',
 };
 
 export { SCREENS };

@@ -68,6 +68,36 @@ export const tabbedNavigation = () =>
                   children: [
                     {
                       component: {
+                        name: SCREENS.Animation,
+                        passProps: {
+                          text: 'This is Animation',
+                        },
+                      },
+                    },
+                  ],
+                  options: {
+                    topBar: {
+                      visible: false,
+                      drawBehind: true,
+                      animate: true,
+                    },
+                    bottomTab: {
+                      fontSize: 14,
+                      text: 'Animation',
+                      textColor: TYPOGRAPHY.COLOR.Primary,
+                      selectedTextColor: TYPOGRAPHY.COLOR.Warning,
+                      selectedIconColor: TYPOGRAPHY.COLOR.Warning,
+                      icon: require('../view/assets/images/tabbar/slide.png'),
+                      selectedIcon: require('../view/assets/images/tabbar/slide.png'),
+                    },
+                  },
+                },
+              },
+              {
+                stack: {
+                  children: [
+                    {
+                      component: {
                         name: SCREENS.Settings,
                       },
                     },

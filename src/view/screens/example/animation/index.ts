@@ -15,9 +15,9 @@ const mapStateToProps = (state: RootState) => ({
 
 const mapDispatchToProps = (dispatch: ThunkDispatch<{}, {}, any>): Partial<Props> => ({});
 
-const dummyContainer = connect(
+const animContainer = connect(
   mapStateToProps,
   mapDispatchToProps,
 )(Component);
 
-export default dummyContainer;
+export default animContainer;
