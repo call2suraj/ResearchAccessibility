@@ -31,10 +31,10 @@ const AnimationExample: React.FC<Props> = (props: Props) => {
 
 
   useEffect(() => {
-    for (let i = 0; i < 150; i++) {
+    for (let i = 0; i < 100; i++) {
       setTimeout(() => {
         setTranslation(i);
-      }, 50 * i);
+      }, 30 * i);
     }
   }, []);
 
@@ -68,7 +68,10 @@ const AnimationExample: React.FC<Props> = (props: Props) => {
       </View>
 
       <View>
-      <Accordion headerText="Unavailable Test" headerBody={<InnerComponent myprop={'animation'}/>} isCollapse={true} bgcolor={'#EEEEEE'}/>
+      <Accordion headerText="Unavailable Test" 
+      headerBody={<InnerComponent myprop={'animation'}/>} 
+      isCollapse={true} 
+      bgcolor={'#EEEEEE'}/>
       </View>
 
       <View style={{ marginTop: 2 }}>
